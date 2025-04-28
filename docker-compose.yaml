@@ -14,6 +14,7 @@ services:
 
   app:
     build: .
+    image: springbootmvcsdpproject11-app
     ports:
       - "2028:2028"
     depends_on:
