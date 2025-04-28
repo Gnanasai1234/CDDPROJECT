@@ -15,7 +15,7 @@ pipeline {
         stage('Docker Build & Run') {
             steps {
                 bat 'docker-compose down'  // Stop any running containers
-                bat 'docker-compose build --no-cache' // Build Docker images
+                bat 'docker-compose build' // Build Docker images
                 
                 bat 'docker-compose up -d' // Run containers in detached mode
             }
